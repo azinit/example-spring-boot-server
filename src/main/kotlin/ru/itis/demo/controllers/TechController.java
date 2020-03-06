@@ -13,7 +13,7 @@ import ru.itis.demo.services.interfaces.TechService;
 public class TechController {
     @Autowired
     private TechService techService;
-    
+
     @GetMapping
     public String list(Model model) {
         model.addAttribute("techs", techService.getList());
